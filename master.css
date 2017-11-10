@@ -63,9 +63,20 @@ main {
   text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+  .dl-tiles {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .dl-tiles {
+    flex-direction: row;
+  }
+}
+
 .dl-tiles {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 550px;
